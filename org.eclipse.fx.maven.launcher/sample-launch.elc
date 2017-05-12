@@ -1,0 +1,67 @@
+{
+	"name" : "my.osgi.sample.launch",
+	"modules" : [
+		{
+			"type" : "simple",
+			"name" : "org.eclipse.equinox.console",
+			"url"  : "file:/Users/tomschindl/Applications/Eclipse/Eclipse460.app/Contents/Eclipse/plugins/org.eclipse.equinox.console_1.1.200.v20150929-1405.jar"
+		},
+		{
+			"type" : "maven",
+			"groupId" : "at.bestsolution.efxclipse.eclipse",
+			"artifactId" : "org.apache.felix.gogo.command",
+			"version" : "0.10.0",
+			"name" : "org.apache.felix.gogo.command"
+		},
+		{
+			"type" : "maven",
+			"groupId" : "at.bestsolution.efxclipse.eclipse",
+			"artifactId" : "org.apache.felix.gogo.shell",
+			"version" : "0.10.0",
+			"name" : "org.apache.felix.gogo.shell"
+		},
+		{
+			"type" : "maven",
+			"groupId" : "at.bestsolution.efxclipse.eclipse",
+			"artifactId" : "org.apache.felix.gogo.runtime",
+			"version" : "0.10.0",
+			"name" : "org.apache.felix.gogo.runtime"
+		},
+		{
+			"type" : "maven",
+			"groupId" : "at.bestsolution.efxclipse.eclipse",
+			"artifactId" : "org.eclipse.equinox.ds",
+			"version" : "1.4.400",
+			"name" : "org.eclipse.equinox.ds",
+			"startLevel" : 1
+		},
+		{
+			"type" : "maven",
+			"groupId" : "at.bestsolution.efxclipse.eclipse",
+			"artifactId" : "org.eclipse.equinox.util",
+			"version" : "1.0.500",
+			"name" : "org.eclipse.equinox.util"
+		},
+		{
+			"type" : "maven",
+			"groupId" : "at.bestsolution.efxclipse.eclipse",
+			"artifactId" : "org.eclipse.osgi.services",
+			"version" : "3.5.100",
+			"name" : "org.eclipse.osgi.services"
+		},
+		{
+			"type" : "simple",
+			"name" : "my.osgi.sample",
+			"url" : "file:/Users/tomschindl/Documents/e-workspaces/efxclipse-master-maven/test.bnd/my.osgi.sample/target/classes"
+		}
+	],
+	"framework" : {
+		"type" : "simple",
+		"name" : "equinox",
+		"url" : "file:/Users/tomschindl/Applications/Eclipse/Eclipse460.app/Contents/Eclipse/plugins/org.eclipse.osgi_3.11.0.v20160603-1336.jar",
+		"arguments" : [
+			"-consoleLog",
+			"-console"
+		 ]
+	}
+}
